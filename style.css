@@ -1,0 +1,160 @@
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+.byte{
+    opacity: 0;
+}
+.grid01{
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(6, 50px) ; 
+    grid-template-rows:repeat(3, 1fr) ; 
+    gap: 10px; 
+    color: white;
+    font-size: 22px; 
+    /* margin: 0px 250px; */
+    box-sizing: border-box;
+}
+.div1{
+background-color: brown;
+grid-column: span 3;
+text-align: center;
+padding: 20px;
+border-radius: 5px;
+
+}
+.div2{
+    background-color: brown;
+    grid-column: span 3;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.div3{
+    background-color: brown;
+    grid-column: span 2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.div4{
+    background-color: brown; 
+    grid-column: span 4;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.div5{
+    background-color: brown;
+    grid-column: span 6 ;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.prepbytebox{
+    width: 355px;
+    height: 275px;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+border-radius: 20px; 
+
+}
+.preimg{
+    width: 300px;
+    height: 100px;   
+}
+h1{
+    margin: 0px;
+    color: brown;
+}
+/* p{
+    margin: 0px;
+    text-align: center;
+} */
+.pretext{
+    text-align: center;
+    border: 1px dashed black;
+  line-height: 1.5;
+ 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+}
+.imagebox2{
+    margin: 20px auto;
+    width: 500px;
+    /* border: 2px solid black; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    
+}
+
+.helloheading{
+    color: white;
+    font-size: 80px;
+}
+
+.box2img{
+    width: 500px;
+    height:200px;   
+}
+@media only screen and (max-width:550px) {
+    .container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .grid01{
+        padding: 20px 0px;
+        margin: 0 auto;
+      
+    }
+    .imagebox2{
+        flex-direction: column-reverse;
+       width: 100%;  
+    }
+    .helloheading {
+
+        font-size: 68px;
+    }
+    .box2img {
+        width: 300px;
+        height: 200px;
+    }
+    .prepbytebox{
+        
+        width: 300px;
+        padding-left: 50px;
+        margin: 0 auto;
+        padding: 10px;
+        display: none;
+    }
+    .preimg{
+        width: 250px;
+        height: 100px;   
+    }
+    .pretext{
+        text-align: center;
+        border: 1px dashed black;
+      line-height: 1.5;
+      padding: 10px;
+    }
+    .byteimg{
+  margin: 20px 60px;
+    }
+    .byte{
+        
+         width: 250px;
+         opacity: 1;
+    }
+}
